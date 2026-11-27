@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration - HealthCare</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <h1>HealthCare</h1>
+        <h2>Patient Registration</h2>
+        <p>Create your patient account</p>
+
+        <form id="registerForm">
+            <input type="text" id="name"
+                placeholder="Full Name" required>
+
+            <input type="email" id="email"
+                placeholder="Email Address" required>
+
+            <input type="tel" id="phone"
+                placeholder="Phone Number" required>
+
+            <input type="password" id="password"
+                placeholder="Password (minimum 6 characters)"
+                minlength="6" required>
+
+            <input type="password" id="confirmPassword"
+                placeholder="Confirm Password" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message"></p>
+
+        <p>Already registered?
+            <a href="login.html">Login here</a>
+        </p>
+    </div>
+
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare - Your Health Partner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">Health<span>Care</span></div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  <a href="register.html">Register</a>
+<a href="login.html">Patient Login</a>
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#hospitals">Hospitals</a>
+        <a href="#booking">Book Appointment</a>
+      
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">YOUR HEALTH, OUR PRIORITY</p>
+        <h1>Healthcare Made <span>Simple</span></h1>
+        <p>
+            Find doctors, hospitals, medicines, laboratory tests
+            and physiotherapy services in one place.
+        </p>
+        <a href="#services" class="btn">Explore Services</a>
+    </div>
+</section>
+
+<section class="search-section">
+    <h2>Find Healthcare Services</h2>
+    <input type="text" id="searchInput"
+        placeholder="Search doctors, services or specializations...">
+    <button class="btn" id="searchBtn">Search</button>
+    <p id="searchMessage"></p>
+</section>
+
+<section class="section" id="services">
+    <h2>Our Healthcare Services</h2>
+    <p class="subtitle">Everything you need for your health</p>
+
+    <div class="service-grid">
+        <a href="#doctors" class="service-card">
+            <div class="service-icon">🩺</div>
+            <h3>Find Doctors</h3>
+            <p>Search doctors by specialization.</p>
+        </a>
+
+        <a href="#hospitals" class="service-card">
+            <div class="service-icon">🏥</div>
+            <h3>Find Hospitals</h3>
+            <p>Explore hospitals and their services.</p>
+        </a>
+
+        <a href="#booking" class="service-card">
+            <div class="service-icon">📅</div>
+            <h3>Appointments</h3>
+            <p>Request an appointment online.</p>
+        </a>
+
+        <a href="#pharmacy" class="service-card">
+            <div class="service-icon">💊</div>
+            <h3>Online Pharmacy</h3>
+            <p>Explore medicine ordering services.</p>
+        </a>
+
+        <a href="#tests" class="service-card">
+            <div class="service-icon">🧪</div>
+            <h3>Lab Tests</h3>
+            <p>Explore diagnostic test booking.</p>
+        </a>
+
+        <a href="#physio" class="service-card">
+            <div class="service-icon">🧑‍⚕️</div>
+            <h3>Physiotherapy</h3>
+            <p>Find physiotherapy services.</p>
+        </a>
+    </div>
+</section>
+
+<section class="section light" id="doctors">
+    <h2>Our Doctors</h2>
+    <p class="subtitle">Sample doctor profiles for demonstration</p>
+
+    <div class="doctor-grid" id="doctorList">
+
+        <div class="doctor-card" data-search="cardiology heart">
+            <div class="doctor-icon">👨‍⚕️</div>
+            <h3>Dr. Rahul Sharma</h3>
+            <p>Cardiologist</p>
+            <p>Heart Specialist</p>
+            <a href="#booking" class="btn small">Book Now</a>
+        </div>
+
+        <div class="doctor-card" data-search="neurology brain">
+            <div class="doctor-icon">👩‍⚕️</div>
+            <h3>Dr. Priya Das</h3>
+            <p>Neurologist</p>
+            <p>Brain Specialist</p>
+            <a href="#booking" class="btn small">Book Now</a>
+        </div>
+
+        <div class="doctor-card" data-search="orthopedics bone">
+            <div class="doctor-icon">👨‍⚕️</div>
+            <h3>Dr. Amit Roy</h3>
+            <p>Orthopedic Specialist</p>
+            <p>Bone and Joint Care</p>
+            <a href="#booking" class="btn small">Book Now</a>
+        </div>
+
+        <div class="doctor-card" data-search="general medicine">
+            <div class="doctor-icon">👩‍⚕️</div>
+            <h3>Dr. Sneha Paul</h3>
+            <p>General Physician</p>
+            <p>General Healthcare</p>
+            <a href="#booking" class="btn small">Book Now</a>
+        </div>
+
+    </div>
+    <p class="demo-note">These are fictional sample profiles, not real doctors.</p>
+</section>
+
+<section class="section" id="hospitals">
+    <h2>Nearby Hospitals</h2>
+    <p class="subtitle">Hospital directory demonstration</p>
+
+    <div class="service-grid">
+        <div class="service-card">
+            <div class="service-icon">🏥</div>
+            <h3>Hospital Directory</h3>
+            <p>Find hospital names, addresses and contact details.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📍</div>
+            <h3>Nearby Search</h3>
+            <p>Search hospitals by your location.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section light" id="booking">
+    <h2>Book an Appointment</h2>
+    <p class="subtitle">Submit a demonstration appointment request</p>
+
+    <form id="appointmentForm">
+        <input type="text" id="patientName"
+            placeholder="Patient Name" required>
+
+        <input type="tel" id="phone"
+            placeholder="Phone Number" required
+            pattern="[0-9]{10}" maxlength="10">
+
+        <select id="specialization" required>
+            <option value="">Select Specialization</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>General Physician</option>
+        </select>
+
+        <input type="date" id="appointmentDate" required>
+
+        <button type="submit" class="btn">Submit Request</button>
+        <p id="bookingMessage"></p>
+    </form>
+    <p class="demo-note">Demo only: requests are not sent to a hospital.</p>
+</section>
+
+<section class="section" id="pharmacy">
+    <h2>Online Pharmacy</h2>
+    <p>Find medicines through verified pharmacy partners.</p>
+    <a href="#booking" class="btn">Explore Healthcare</a>
+    <p class="demo-note">Online medicine ordering will be implemented in a later stage.</p>
+</section>
+
+<section class="section light" id="tests">
+    <h2>Laboratory Tests</h2>
+    <p>Explore diagnostic and health checkup services.</p>
+    <a href="#booking" class="btn">Explore Tests</a>
+</section>
+
+<section class="section" id="physio">
+    <h2>Physiotherapy</h2>
+    <p>Find physiotherapy centres and therapy services.</p>
+    <a href="#booking" class="btn">Explore Services</a>
+</section>
+
+<section class="emergency">
+    <h2>Medical Emergency?</h2>
+    <p>For immediate medical emergencies in India, call 112.</p>
+    <a href="tel:112" class="emergency-btn">Call 112</a>
+</section>
+
+<footer>
+    <h2>HealthCare</h2>
+    <p>Your Health, Our Priority</p>
+    <p>© 2026 HealthCare. Demonstration Website.</p>
+</footer>
+
+</body>
+</html>

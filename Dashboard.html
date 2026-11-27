@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - HealthCare</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Health<span>Care</span></div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html#doctors">Doctors</a>
+        <a href="index.html#hospitals">Hospitals</a>
+        <button id="logoutBtn" class="btn">Logout</button>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Patient Dashboard</h2>
+
+    <div class="auth-card" style="margin:25px auto;">
+        <h2>Welcome, <span id="patientName">Patient</span>!</h2>
+        <p>Your HealthCare account is active.</p>
+
+        <p><strong>Email:</strong>
+            <span id="patientEmail"></span>
+        </p>
+
+        <p><strong>Account type:</strong> Patient</p>
+    </div>
+
+    <h2>Healthcare Services</h2>
+
+    <div class="service-grid">
+
+        <a href="index.html#doctors" class="service-card">
+            <div class="service-icon">🩺</div>
+            <h3>Find Doctors</h3>
+            <p>Explore doctor specializations.</p>
+        </a>
+
+        <a href="index.html#hospitals" class="service-card">
+            <div class="service-icon">🏥</div>
+            <h3>Find Hospitals</h3>
+            <p>Explore hospital services.</p>
+        </a>
+
+        <a href="index.html#booking" class="service-card">
+            <div class="service-icon">📅</div>
+            <h3>Appointments</h3>
+            <p>Visit appointment booking.</p>
+        </a>
+
+        <a href="index.html#pharmacy" class="service-card">
+            <div class="service-icon">💊</div>
+            <h3>Pharmacy</h3>
+            <p>Explore pharmacy services.</p>
+        </a>
+
+        <a href="index.html#tests" class="service-card">
+            <div class="service-icon">🧪</div>
+            <h3>Lab Tests</h3>
+            <p>Explore laboratory services.</p>
+        </a>
+
+        <a href="index.html#physio" class="service-card">
+            <div class="service-icon">🧑‍⚕️</div>
+            <h3>Physiotherapy</h3>
+            <p>Find therapy services.</p>
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    <h2>HealthCare</h2>
+    <p>Your Health, Our Priority</p>
+    <p>© 2026 HealthCare</p>
+</footer>
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>
